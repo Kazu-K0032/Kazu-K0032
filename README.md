@@ -27,3 +27,6 @@
     <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api/top-langs/?username=kujiKazuaki&layout=compact" />
   </a>
 </p>
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
