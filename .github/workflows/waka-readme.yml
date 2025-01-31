@@ -1,17 +1,24 @@
-name: Waka Readme
+name: Update README Stats
 
 on:
   schedule:
-    # 毎日午前0時に実行
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 */6 * * *" # 6時間ごとに実行
+  workflow_dispatch: # 手動実行可能
 
 jobs:
-  update-readme:
-    name: Update Readme with Metrics
+  update:
     runs-on: ubuntu-latest
     steps:
-      - uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Refresh README.md
+        run: curl -s "https://your-vercel-app.vercel.app/api?username=your-username&force_cache_clear=true"
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Auto-update GitHub stats"
+          git push
