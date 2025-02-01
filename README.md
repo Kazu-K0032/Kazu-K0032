@@ -1,4 +1,4 @@
-![GitHub Stats](https://your-vercel-app.vercel.app/api?username=your-username&show_icons=true&count_private=true&force_cache_clear=true)
+![GitHub Stats](https://your-vercel-app.vercel.app/api?username=kujiKazuaki&show_icons=true&count_private=true&force_cache_clear=true)
 
 # Portfolio
 
