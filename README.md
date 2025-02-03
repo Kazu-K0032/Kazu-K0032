@@ -3,7 +3,7 @@
 # Portfolio
 
 <p align="left">
-  <a href="https://github.com/kujiKazuaki/Kazu">
+  <a href="https://github.com/Kazu-K0032/Kazu">
     <img src="https://komarev.com/ghpvc/?username=Kazu" alt="Kazu" />
   </a>
   <a href="http://qiita.com/Cookie_Iwate">
@@ -18,7 +18,7 @@
 
 <p align="left">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=kujiKazuaki" />
+    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=Kazu-K0032" />
   </a>
 </p>
 
@@ -26,6 +26,6 @@
 
 <p align="left">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api/top-langs/?username=kujiKazuaki&layout=compact" />
+    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact" />
   </a>
 </p>
