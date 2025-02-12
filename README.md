@@ -1,4 +1,4 @@
-![GitHub Stats](https://your-vercel-app.vercel.app/api?username=kujiKazuaki&show_icons=true&count_private=true&force_cache_clear=true)
+![GitHub Stats](https://your-vercel-app.vercel.app/api?username=kujiKazuaki&show_icons=true&count_private=true&force_cache_clear=true&include_all_commits=true)
 
 # Portfolio
 
@@ -18,7 +18,7 @@
 
 <p align="left">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=Kazu-K0032" />
+    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=Kazu-K0032&include_all_commits=true" />
   </a>
 </p>
 
