@@ -1,6 +1,16 @@
-![GitHub Stats](https://your-vercel-app.vercel.app/api?username=kujiKazuaki&show_icons=true&count_private=true&force_cache_clear=true&include_all_commits=true)
+## Portfolio
 
-# Portfolio
+<p align="left">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=Kazu-K0032&include_all_commits=true" />
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact" />
+  </a>
+</p>
 
 <p align="left">
   <a href="https://github.com/Kazu-K0032/Kazu">
@@ -14,18 +24,8 @@
   </a>               
 </p>
 
-### Recent Activities
+### Ref
 
-<p align="left">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=Kazu-K0032&include_all_commits=true" />
-  </a>
-</p>
+[GitHubのプロフィールをカッコよくする方法](https://zenn.dev/a_ichi1/articles/0411396e6b887d)
 
-### Languages
-
-<p align="left">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact" />
-  </a>
-</p>
+[プライベートも含めたGitHubアカウントの評価設定](https://chatgpt.com/share/679ad8eb-2924-800c-9521-9c3eef546932)
