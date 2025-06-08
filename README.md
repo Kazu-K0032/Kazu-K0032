@@ -1,27 +1,14 @@
 ## Portfolio
 
-<p align="left">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=Kazu-K0032&include_all_commits=true" />
-  </a>
-</p>
-
-<p align="left">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact" />
-  </a>
-</p>
+<div style="display: flex; column-gap: 16px;">
+  <img alt="github stats" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api?username=Kazu-K0032&include_all_commits=true" />
+  <img alt="top langs" height="200" src="https://github-readme-stats-zeta-ten-73.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact" />
+</div>
 
 <p align="left">
   <a href="https://github.com/Kazu-K0032/Kazu">
     <img src="https://komarev.com/ghpvc/?username=Kazu" alt="Kazu" />
-  </a>
-  <a href="http://qiita.com/Cookie_Iwate">
-    <img height="20" src="https://qiita-badge.apiapi.app/s/yutkat/posts.svg" />
-  </a> 
-  <a href="http://qiita.com/Cookie_Iwate">
-    <img height="20" src="https://qiita-badge.apiapi.app/s/Cookie_Iwate/contributions.svg" />
-  </a>               
+  </a>             
 </p>
 
 ### Ref
