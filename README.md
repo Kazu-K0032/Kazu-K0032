@@ -22,6 +22,13 @@
   <img alt="productive time" height="200" src="profile-summary-card-output/tokyonight/4-productive-time.svg" />
 </div>
 
+## Participated projects
+
+### sky-app
+- リポジトリ: https://github.com/webex14-team-3/sky-app
+- 役割: フロントエンド開発
+- 技術: Vue.js/Firebase
+
 ## Other
 
 > **概要**: プロフィール閲覧数とソーシャルメディアリンク  
