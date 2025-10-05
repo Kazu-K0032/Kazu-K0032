@@ -8,17 +8,24 @@
 ## 📈 Detailed Analytics
 
 <div style="display: flex; column-gap: 16px; margin-top: 16px;">
-  <img alt="profile summary" height="200" src="profile-summary-card-output/tokyonight/0-profile-details.svg" />
   <img alt="repos per language" height="200" src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
+  <img alt="most commit language" height="200" src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
 </div>
 
 <div style="display: flex; column-gap: 16px; margin-top: 16px;">
-  <img alt="most commit language" height="200" src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
-  <img alt="commit activity" height="200" src="profile-summary-card-output/tokyonight/3-stats.svg" />
+  <img alt="productive time" height="200" src="profile-summary-card-output/tokyonight/4-productive-time.svg" />
 </div>
+
+## Other
 
 <p align="left">
   <a href="https://github.com/Kazu-K0032/Kazu">
     <img src="https://komarev.com/ghpvc/?username=Kazu" alt="Kazu" />
   </a>             
+</p>
+
+<p align="left">
+  <a href="https://twitter.com/Cookie_Kazu24">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
 </p>
