@@ -23,7 +23,7 @@ jobs:
             - name: Compute private repo count
               id: count
               env:
-                  GH_TOKEN: ${{ secrets.PRIVATE_REPO_PAT || secrets.GITHUB_TOKEN }}
+                  GH_TOKEN: ${{ secrets.PRIVATE_REPO_PAT || secrets.GH_TOKEN }}
                   GH_USER: Kazu-K0032
               run: |
                   set -euo pipefail
