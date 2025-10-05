@@ -70,10 +70,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet; then
+          git add -A
+          if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-          git add badge/private-repos.json badge/public-repos.json badge/total-repos.json
           git commit -m "chore: update repo badges private=${{ steps.counts.outputs.private }} public=${{ steps.counts.outputs.public }} total=${{ steps.counts.outputs.total }}"
           git push
