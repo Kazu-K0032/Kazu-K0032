@@ -1,0 +1,57 @@
+name: Update Private Repos Badge
+
+on:
+    schedule:
+        - cron: "0 3 * * *"
+    workflow_dispatch: {}
+
+permissions:
+    contents: write
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Use Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+
+            - name: Compute private repo count
+              id: count
+              env:
+                  GH_TOKEN: ${{ secrets.PRIVATE_REPO_PAT || secrets.GITHUB_TOKEN }}
+                  GH_USER: Kazu-K0032
+              run: |
+                  set -euo pipefail
+                  echo "Fetching private repo count for $GH_USER"
+                  QUERY='{"query":"query($login:String!){ user(login:$login){ repositories(privacy:PRIVATE,ownerAffiliations:OWNER){ totalCount } } }","variables":{"login":"'"$GH_USER"'"}}'
+                  COUNT=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$QUERY" https://api.github.com/graphql | jq -r '.data.user.repositories.totalCount // 0')
+                  echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+            - name: Update badge JSON
+              run: |
+                  mkdir -p badge
+                  cat > badge/private-repos.json << 'JSON'
+                  {
+                    "schemaVersion": 1,
+                    "label": "Private Repos",
+                    "message": "${{ steps.count.outputs.count }}",
+                    "color": "blue"
+                  }
+                  JSON
+
+            - name: Commit changes
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  if git diff --quiet; then
+                    echo "No changes to commit"
+                    exit 0
+                  fi
+                  git add badge/private-repos.json
+                  git commit -m "chore: update private repos badge to ${{ steps.count.outputs.count }}"
+                  git push

@@ -8,6 +8,10 @@
   <img alt="top langs" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
 
+<p align="left" style="margin-top: 8px;">
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu/main/badge/private-repos.json" alt="Private Repos" />
+</p>
+
 ## 📈 Detailed Analytics
 
 > **概要**: より詳細な開発活動の分析（言語別リポジトリ数、コミット頻度、生産時間帯など）  
