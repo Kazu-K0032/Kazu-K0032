@@ -23,7 +23,7 @@ jobs:
       - name: Compute repo counts
         id: counts
         env:
-          GH_TOKEN: ${{ secrets.PRIVATE_REPO_PAT || secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_USER: Kazu-K0032
         run: |
           set -euo pipefail
@@ -36,6 +36,7 @@ jobs:
           echo "private=$PRIV" >> "$GITHUB_OUTPUT"
           echo "public=$PUB" >> "$GITHUB_OUTPUT"
           echo "total=$TOTAL" >> "$GITHUB_OUTPUT"
+          echo "Computed counts -> private: $PRIV, public: $PUB, total: $TOTAL"
 
       - name: Update badge JSONs
         run: |
