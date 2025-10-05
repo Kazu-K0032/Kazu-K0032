@@ -9,7 +9,9 @@
 </div>
 
 <p align="left" style="margin-top: 8px;">
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu/main/badge/private-repos.json" alt="Private Repos" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fprivate-repos.json" alt="Private Repos" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fpublic-repos.json" alt="Public Repos" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-repos.json" alt="Total Repos" />
 </p>
 
 ## 📈 Detailed Analytics
@@ -29,6 +31,7 @@
 ## Participated projects
 
 ### sky-app
+
 - リポジトリ: https://github.com/webex14-team-3/sky-app
 - 役割: フロントエンド開発
 - 技術: Vue.js/Firebase
