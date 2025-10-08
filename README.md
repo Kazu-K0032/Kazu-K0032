@@ -1,46 +1,38 @@
-# Kazu-K0032 Profile(改修工事)
+# Kazu-K0032 Profile
 
-## 📊 GitHub Stats(正確な数字ではないです)
+### 📊 Statistics
 
-> **概要**: 基本的な GitHub 統計情報（コミット数、スター数、フォロワー数、プルリクエスト数など）
-> **集計条件**: プライベートリポジトリを含む全コミット、全期間のデータ
-> **制限**: GitHub Stats API の制限により、Issues/PR はオープンなもののみ、コミット数も制限あり
+> **概要**: リアルタイム統計情報（リポジトリ数、コミット数、Issues、PR 数）
+> **集計条件**: プライベートリポジトリを含む全データ、クローズ済みも含む
+> **更新頻度**: 自動更新（GitHub API 経由でリアルタイム取得）
 
 <div style="display: flex; column-gap: 16px;">
-  <img alt="GitHub Stats" height="200" src="https://github-readme-stats.vercel.app/api?username=Kazu-K0032&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&include_all_commits=true&show_issues=true&show_prs=true" />
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-repos.json" alt="Total Repos" />
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fpublic-repos.json" alt="Public Repos" />
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fprivate-repos.json" alt="Private Repos" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-commits.json" alt="Total Commits" />
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-issues.json" alt="Total Issues" />
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-prs.json" alt="Total PRs" />
+      </td>
+    </tr>
+  </table>
   <img alt="Top Languages" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
-
-### 📊 Accurate Statistics(おそらく正確)
-
-> **概要**: 正確な統計情報（リポジトリ数、Issues、PR、コミット数）
-> **集計条件**: プライベートリポジトリを含む全データ、クローズ済みも含む
-> **注意**: 上記の GitHub Stats と異なり、こちらは正確な数値を表示します
-
-<table>
-<tr>
-<td align="center">
-  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-repos.json" alt="Total Repos" />
-</td>
-<td align="center">
-  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fpublic-repos.json" alt="Public Repos" />
-</td>
-<td align="center">
-  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fprivate-repos.json" alt="Private Repos" />
-</td>
-</tr>
-<tr>
-<td align="center">
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-issues.json" alt="Total Issues" />
-</td>
-<td align="center">
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-prs.json" alt="Total PRs" />
-</td>
-<td align="center">
-  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-commits.json" alt="Total Commits" />
-</td>
-</tr>
-</table>
 
 ## Participated projects
 
