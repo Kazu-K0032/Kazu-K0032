@@ -1,3 +1,5 @@
+# Kazu-K0032 Profile(改修工事)
+
 ## 📊 GitHub Stats
 
 > **概要**: 基本的な GitHub 統計情報（コミット数、スター数、フォロワー数、プルリクエスト数など）
@@ -10,7 +12,7 @@
 > **集計条件**: 全リポジトリの Issues とプルリクエスト、クローズ済みも含む
 
 <div style="display: flex; column-gap: 16px;">
-  <img alt="github stats" height="200" src="https://github-readme-stats.vercel.app/api?username=Kazu-K0032&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+  <img alt="github stats" height="200" src="https://github-readme-stats.vercel.app/api?username=Kazu-K0032&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&include_all_commits=true&hide=issues,prs" />
   <img alt="top langs" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
 
@@ -23,8 +25,9 @@
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-repos.json" alt="Total Repos" />
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fpublic-repos.json" alt="Public Repos" />
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fprivate-repos.json" alt="Private Repos" />
-  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-issues.json" alt="Total Issues" />
-  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-prs.json" alt="Total PRs" />
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-issues.json" alt="Total Issues" />
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-prs.json" alt="Total PRs" />
+  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-commits.json" alt="Total Commits" />
 </p>
 
 ## 📈 Detailed Analytics
