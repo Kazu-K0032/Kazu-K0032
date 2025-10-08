@@ -1,48 +1,46 @@
 # Kazu-K0032 Profile(改修工事)
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats(正確な数字ではないです)
 
 > **概要**: 基本的な GitHub 統計情報（コミット数、スター数、フォロワー数、プルリクエスト数など）
 > **集計条件**: プライベートリポジトリを含む全コミット、全期間のデータ
-> **注意**: Issues/PR の数値はオープンなもののみで、クローズ済みは含まれません
-
-### 📈 Issue & PR Metrics
-
-> **概要**: Issues とプルリクエストの詳細統計（オープン・クローズ済み含む）
-> **集計条件**: 全リポジトリの Issues とプルリクエスト、クローズ済みも含む
+> **制限**: GitHub Stats API の制限により、Issues/PR はオープンなもののみ、コミット数も制限あり
 
 <div style="display: flex; column-gap: 16px;">
-  <img alt="github stats" height="200" src="https://github-readme-stats.vercel.app/api?username=Kazu-K0032&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&include_all_commits=true&hide=issues,prs" />
-  <img alt="top langs" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
+  <img alt="GitHub Stats" height="200" src="https://github-readme-stats.vercel.app/api?username=Kazu-K0032&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&include_all_commits=true&show_issues=true&show_prs=true" />
+  <img alt="Top Languages" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
 
-<div style="display: flex; column-gap: 16px; margin-top: 16px;">
-  <img alt="GitHub Profile Summary" height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kazu-K0032&theme=tokyonight" />
-  <img alt="GitHub Stats" height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kazu-K0032&theme=tokyonight" />
-</div>
+### 📊 Accurate Statistics(おそらく正確)
 
-<p align="left" style="margin-top: 8px;">
+> **概要**: 正確な統計情報（リポジトリ数、Issues、PR、コミット数）
+> **集計条件**: プライベートリポジトリを含む全データ、クローズ済みも含む
+> **注意**: 上記の GitHub Stats と異なり、こちらは正確な数値を表示します
+
+<table>
+<tr>
+<td align="center">
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-repos.json" alt="Total Repos" />
+</td>
+<td align="center">
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fpublic-repos.json" alt="Public Repos" />
+</td>
+<td align="center">
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fprivate-repos.json" alt="Private Repos" />
+</td>
+</tr>
+<tr>
+<td align="center">
   <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-issues.json" alt="Total Issues" />
+</td>
+<td align="center">
   <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-prs.json" alt="Total PRs" />
-  <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-commits.json" alt="Total Commits" />
-</p>
-
-## 📈 Detailed Analytics
-
-> **概要**: より詳細な開発活動の分析（言語別リポジトリ数、コミット頻度、生産時間帯など）
-> **集計条件**: プライベートリポジトリを含む、過去 1 年間のコミット活動を基に自動生成
-
-<div style="display: flex; column-gap: 16px; margin-top: 16px;">
-  <img alt="repos per language" height="200" src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
-  <img alt="most commit language" height="200" src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
-</div>
-
-<div style="display: flex; column-gap: 16px; margin-top: 16px;">
-  <img alt="productive time" height="200" src="profile-summary-card-output/tokyonight/4-productive-time.svg" />
-</div>
+</td>
+<td align="center">
+  <img src="https://img.shields.io/badge/Total%20Commits-2547-orange?style=flat-square" alt="Total Commits" />
+</td>
+</tr>
+</table>
 
 ## Participated projects
 
