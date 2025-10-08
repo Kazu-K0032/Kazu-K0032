@@ -1,22 +1,35 @@
 ## 📊 GitHub Stats
 
-> **概要**: 基本的な GitHub 統計情報（コミット数、スター数、フォロワー数、プルリクエスト数など）  
+> **概要**: 基本的な GitHub 統計情報（コミット数、スター数、フォロワー数、プルリクエスト数など）
 > **集計条件**: プライベートリポジトリを含む全コミット、全期間のデータ
+> **注意**: Issues/PR の数値はオープンなもののみで、クローズ済みは含まれません
+
+### 📈 Issue & PR Metrics
+
+> **概要**: Issues とプルリクエストの詳細統計（オープン・クローズ済み含む）
+> **集計条件**: 全リポジトリの Issues とプルリクエスト、クローズ済みも含む
 
 <div style="display: flex; column-gap: 16px;">
   <img alt="github stats" height="200" src="https://github-readme-stats.vercel.app/api?username=Kazu-K0032&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
   <img alt="top langs" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
 
+<div style="display: flex; column-gap: 16px; margin-top: 16px;">
+  <img alt="GitHub Profile Summary" height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kazu-K0032&theme=tokyonight" />
+  <img alt="GitHub Stats" height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kazu-K0032&theme=tokyonight" />
+</div>
+
 <p align="left" style="margin-top: 8px;">
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-repos.json" alt="Total Repos" />
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fpublic-repos.json" alt="Public Repos" />
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Fprivate-repos.json" alt="Private Repos" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-issues.json" alt="Total Issues" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-prs.json" alt="Total PRs" />
 </p>
 
 ## 📈 Detailed Analytics
 
-> **概要**: より詳細な開発活動の分析（言語別リポジトリ数、コミット頻度、生産時間帯など）  
+> **概要**: より詳細な開発活動の分析（言語別リポジトリ数、コミット頻度、生産時間帯など）
 > **集計条件**: プライベートリポジトリを含む、過去 1 年間のコミット活動を基に自動生成
 
 <div style="display: flex; column-gap: 16px; margin-top: 16px;">
@@ -38,13 +51,13 @@
 
 ## Other
 
-> **概要**: プロフィール閲覧数とソーシャルメディアリンク  
+> **概要**: プロフィール閲覧数とソーシャルメディアリンク
 > **集計条件**: プロフィールページの訪問回数をリアルタイムでカウント
 
 <p align="left">
   <a href="https://github.com/Kazu-K0032/Kazu">
     <img src="https://komarev.com/ghpvc/?username=Kazu" alt="Kazu" />
-  </a>             
+  </a>
 </p>
 
 <p align="left">

@@ -1,0 +1,92 @@
+name: Update Issues and PR Badge
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Compute issues and PR counts
+        id: counts
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USER: Kazu-K0032
+        run: |
+          set -euo pipefail
+          echo "Fetching issues and PR counts for $GH_USER"
+
+          # Get all repositories (public and private)
+          Q_REPOS='{"query":"query($login:String!){ user(login:$login){ repositories(first:100,ownerAffiliations:OWNER){ nodes{ name } } } }","variables":{"login":"'"$GH_USER"'"}}'
+          REPOS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_REPOS" https://api.github.com/graphql | jq -r '.data.user.repositories.nodes[].name')
+
+          TOTAL_ISSUES=0
+          TOTAL_PRS=0
+
+          for repo in $REPOS; do
+            echo "Processing repository: $repo"
+
+            # Get issues count (open + closed)
+            Q_ISSUES='{"query":"query($owner:String!,$repo:String!){ repository(owner:$owner,name:$repo){ issues{ totalCount } } }","variables":{"owner":"'"$GH_USER"'","repo":"'"$repo"'"}}'
+            ISSUES=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_ISSUES" https://api.github.com/graphql | jq -r '.data.repository.issues.totalCount // 0')
+
+            # Get PRs count (open + closed)
+            Q_PRS='{"query":"query($owner:String!,$repo:String!){ repository(owner:$owner,name:$repo){ pullRequests{ totalCount } } }","variables":{"owner":"'"$GH_USER"'","repo":"'"$repo"'"}}'
+            PRS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_PRS" https://api.github.com/graphql | jq -r '.data.repository.pullRequests.totalCount // 0')
+
+            TOTAL_ISSUES=$((TOTAL_ISSUES + ISSUES))
+            TOTAL_PRS=$((TOTAL_PRS + PRS))
+
+            echo "Repository $repo: Issues=$ISSUES, PRs=$PRS"
+          done
+
+          echo "total_issues=$TOTAL_ISSUES" >> "$GITHUB_OUTPUT"
+          echo "total_prs=$TOTAL_PRS" >> "$GITHUB_OUTPUT"
+          echo "Computed counts -> Issues: $TOTAL_ISSUES, PRs: $TOTAL_PRS"
+
+      - name: Update badge JSONs
+        run: |
+          mkdir -p badge
+
+          # Update issues badge
+          cat > badge/total-issues.json << EOF
+          {
+            "schemaVersion": 1,
+            "label": "Total Issues",
+            "message": "${{ steps.counts.outputs.total_issues }}",
+            "color": "blue"
+          }
+          EOF
+
+          # Update PRs badge
+          cat > badge/total-prs.json << EOF
+          {
+            "schemaVersion": 1,
+            "label": "Total PRs",
+            "message": "${{ steps.counts.outputs.total_prs }}",
+            "color": "green"
+          }
+          EOF
+
+          echo "Updated badge files"
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add badge/total-issues.json badge/total-prs.json
+          git diff --staged --quiet || git commit -m "Update issues and PR counts [skip ci]"
+          git push
