@@ -37,7 +37,7 @@
   <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/badge/total-prs.json" alt="Total PRs" />
 </td>
 <td align="center">
-  <img src="https://img.shields.io/badge/Total%20Commits-2547-orange?style=flat-square" alt="Total Commits" />
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKazu-K0032%2FKazu-K0032%2Fmain%2Fbadge%2Ftotal-commits.json" alt="Total Commits" />
 </td>
 </tr>
 </table>
