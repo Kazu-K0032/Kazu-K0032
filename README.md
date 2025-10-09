@@ -3,9 +3,9 @@
 ### 📊 Statistics
 
 > **概要**: リアルタイム統計情報（リポジトリ数、コミット数、Issues、PR 数）
-> 
+>
 > **集計条件**: プライベートリポジトリを含む全データ、クローズ済みも含む
-> 
+>
 > **更新頻度**: 自動更新（GitHub API 経由でリアルタイム取得）
 
 <div style="display: flex; column-gap: 16px;">
@@ -36,7 +36,7 @@
   <img alt="Top Languages" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
 
-## Participated projects
+## 🚀 Participated projects
 
 ### sky-app
 
@@ -44,10 +44,10 @@
 - 役割: フロントエンド開発
 - 技術: Vue.js/Firebase
 
-## Other
+## 🔗 Other
 
 > **概要**: プロフィール閲覧数とソーシャルメディアリンク
-> 
+>
 > **集計条件**: プロフィールページの訪問回数をリアルタイムでカウント
 
 <p align="left">
