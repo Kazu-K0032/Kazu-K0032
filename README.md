@@ -2,7 +2,7 @@
 
 ### 📊 Statistics
 
-> **概要**: リアルタイム統計情報（リポジトリ数、コミット数、Issues、PR 数）
+> **概要**: リアルタイム統計情報（リポジトリ数、コミット数、Issues、PR 数、言語使用率）
 >
 > **集計条件**: プライベートリポジトリを含む全データ、クローズ済みも含む
 >
@@ -33,7 +33,7 @@
       </td>
     </tr>
   </table>
-  <img alt="Top Languages" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
+  <img alt="Most Used Languages" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
 
 ## 🚀 Participated projects
