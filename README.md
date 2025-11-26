@@ -46,9 +46,13 @@
 
 ## 🔗 Other
 
-> **概要**: プロフィール閲覧数とソーシャルメディアリンク
+> **概要**: その他紹介
 >
-> **集計条件**: プロフィールページの訪問回数をリアルタイムでカウント
+> 1. プロフィール閲覧数
+> 2. ソーシャルメディア
+> 3. ポートフォリオ
+>
+> **集計条件**: プロフィールページの訪問回数はリアルタイムでカウント
 
 <p align="left">
   <a href="https://github.com/Kazu-K0032/Kazu">
@@ -59,5 +63,8 @@
 <p align="left">
   <a href="https://twitter.com/Cookie_Kazu24">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  <a href="https://kuji-server.com/">
+    <img src="https://img.shields.io/badge/Portfolio-4CAF50?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" />
   </a>
 </p>
