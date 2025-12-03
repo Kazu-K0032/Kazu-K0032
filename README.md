@@ -33,7 +33,6 @@
       </td>
     </tr>
   </table>
-  <img alt="Most Used Languages" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kazu-K0032&layout=compact&theme=tokyonight&hide_border=true&count_private=true" />
 </div>
 
 ## 🚀 Participated projects
