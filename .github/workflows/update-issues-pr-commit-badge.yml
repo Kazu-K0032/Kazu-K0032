@@ -1,4 +1,6 @@
-name: Update Issues, PR and Commits Badge
+# Issues・PR・コミット数をGitHub APIで取得し、バッジ用JSONを更新するワークフロー
+# 毎日UTC4時（JST13時）に自動実行する
+name: Issues・PR・コミット数バッジ更新
 
 on:
   schedule:

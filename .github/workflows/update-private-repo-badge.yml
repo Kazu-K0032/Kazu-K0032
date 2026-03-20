@@ -1,4 +1,6 @@
-name: Update Private Repos Badge
+# パブリック・プライベートのリポジトリ数をGitHub APIで取得し、バッジ用JSONを更新するワークフロー
+# 毎日UTC3時（JST12時）に自動実行する
+name: リポジトリ数バッジ更新
 
 on:
   schedule:

@@ -1,4 +1,6 @@
-name: GitHub-Profile-Summary-Cards
+# GitHubのアクティビティをグラフカード画像として生成し、リポジトリに保存するワークフロー
+# 毎日UTC0時（JST9時）に自動実行する
+name: プロフィールサマリーカード生成
 
 on:
   schedule:
