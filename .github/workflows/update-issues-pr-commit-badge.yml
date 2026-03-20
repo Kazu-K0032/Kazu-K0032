@@ -106,4 +106,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add badge/total-issues.json badge/total-prs.json badge/total-commits.json
           git diff --staged --quiet || git commit -m "Update issues and PR counts [skip ci]"
+          git pull --rebase
           git push

@@ -80,4 +80,5 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update repo badges private=${{ steps.counts.outputs.private }} public=${{ steps.counts.outputs.public }} total=${{ steps.counts.outputs.total }}"
+          git pull --rebase
           git push
