@@ -31,7 +31,9 @@ jobs:
 
           # Get all repositories (public and private)
           Q_REPOS='{"query":"query($login:String!){ user(login:$login){ repositories(first:100,ownerAffiliations:OWNER){ nodes{ name } } } }","variables":{"login":"'"$GH_USER"'"}}'
-          REPOS=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_REPOS" https://api.github.com/graphql | jq -r '.data.user.repositories.nodes[].name')
+          REPOS_RESPONSE=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_REPOS" https://api.github.com/graphql)
+          echo "GraphQL response: $REPOS_RESPONSE"
+          REPOS=$(echo "$REPOS_RESPONSE" | jq -r '.data.user.repositories.nodes // [] | .[].name')
 
           TOTAL_ISSUES=0
           TOTAL_PRS=0
