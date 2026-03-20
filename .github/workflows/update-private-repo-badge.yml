@@ -30,8 +30,12 @@ jobs:
           echo "Fetching repo counts for $GH_USER"
           Q_PRIV='{"query":"query($login:String!){ user(login:$login){ repositories(privacy:PRIVATE,ownerAffiliations:OWNER){ totalCount } } }","variables":{"login":"'"$GH_USER"'"}}'
           Q_PUB='{"query":"query($login:String!){ user(login:$login){ repositories(privacy:PUBLIC,ownerAffiliations:OWNER){ totalCount } } }","variables":{"login":"'"$GH_USER"'"}}'
-          PRIV=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_PRIV" https://api.github.com/graphql | jq -r '.data.user.repositories.totalCount // 0')
-          PUB=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_PUB" https://api.github.com/graphql | jq -r '.data.user.repositories.totalCount // 0')
+          PRIV_RESPONSE=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_PRIV" https://api.github.com/graphql)
+          PUB_RESPONSE=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_PUB" https://api.github.com/graphql)
+          echo "Private repos response: $PRIV_RESPONSE"
+          echo "Public repos response: $PUB_RESPONSE"
+          PRIV=$(echo "$PRIV_RESPONSE" | jq -r '.data.user.repositories.totalCount // 0')
+          PUB=$(echo "$PUB_RESPONSE" | jq -r '.data.user.repositories.totalCount // 0')
           TOTAL=$((PRIV + PUB))
           echo "private=$PRIV" >> "$GITHUB_OUTPUT"
           echo "public=$PUB" >> "$GITHUB_OUTPUT"
