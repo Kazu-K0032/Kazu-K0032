@@ -52,3 +52,13 @@
 ```
 
     
+
+---
+
+![](./4-productive-time.svg)
+
+```
+![](https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/profile-summary-card-output/shades_of_purple/4-productive-time.svg)
+```
+
+    
