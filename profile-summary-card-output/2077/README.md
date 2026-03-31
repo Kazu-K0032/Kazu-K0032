@@ -52,13 +52,3 @@
 ```
 
     
-
----
-
-![](./4-productive-time.svg)
-
-```
-![](https://raw.githubusercontent.com/Kazu-K0032/Kazu-K0032/main/profile-summary-card-output/2077/4-productive-time.svg)
-```
-
-    
