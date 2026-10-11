@@ -30,14 +30,37 @@ jobs:
         run: |
           set -euo pipefail
           echo "Fetching repo counts for $GH_USER"
-          Q_PRIV='{"query":"query($login:String!){ user(login:$login){ repositories(privacy:PRIVATE,ownerAffiliations:OWNER){ totalCount } } }","variables":{"login":"'"$GH_USER"'"}}'
-          Q_PUB='{"query":"query($login:String!){ user(login:$login){ repositories(privacy:PUBLIC,ownerAffiliations:OWNER){ totalCount } } }","variables":{"login":"'"$GH_USER"'"}}'
-          PRIV_RESPONSE=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_PRIV" https://api.github.com/graphql)
-          PUB_RESPONSE=$(curl -s -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -d "$Q_PUB" https://api.github.com/graphql)
-          echo "Private repos response: $PRIV_RESPONSE"
-          echo "Public repos response: $PUB_RESPONSE"
-          PRIV=$(echo "$PRIV_RESPONSE" | jq -r '.data.user.repositories.totalCount // 0')
-          PUB=$(echo "$PUB_RESPONSE" | jq -r '.data.user.repositories.totalCount // 0')
+
+          # Return the number of owned repositories with the given privacy. Any API
+          # error or non-numeric count fails the step so that the badges are not updated.
+          repo_count() {
+            local privacy="$1" payload response count
+            payload=$(jq -n --arg login "$GH_USER" --arg privacy "$privacy" '{
+              query: "query($login:String!,$privacy:RepositoryPrivacy!){ user(login:$login){ repositories(privacy:$privacy,ownerAffiliations:OWNER){ totalCount } } }",
+              variables: {login: $login, privacy: $privacy}
+            }')
+            response=$(curl -fsS --retry 3 \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "$payload" \
+              https://api.github.com/graphql) || {
+              echo "::error::GraphQL request failed: $privacy" >&2
+              return 1
+            }
+            if echo "$response" | jq -e '.errors' > /dev/null; then
+              echo "::error::GraphQL returned errors ($privacy): $(echo "$response" | jq -c '.errors')" >&2
+              return 1
+            fi
+            count=$(echo "$response" | jq -r '.data.user.repositories.totalCount')
+            if ! [[ "$count" =~ ^[0-9]+$ ]]; then
+              echo "::error::Invalid totalCount ($count): $privacy" >&2
+              return 1
+            fi
+            echo "$count"
+          }
+
+          PRIV=$(repo_count PRIVATE)
+          PUB=$(repo_count PUBLIC)
           TOTAL=$((PRIV + PUB))
           echo "private=$PRIV" >> "$GITHUB_OUTPUT"
           echo "public=$PUB" >> "$GITHUB_OUTPUT"
